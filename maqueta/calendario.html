@@ -6,10 +6,21 @@
     <!-- Estilo de la pagina con el FRAMEWORK BOOTSTRAP 4-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="estilo_maqueta.css">
-    <link rel="stylesheet" type="text/css" href="infoServicio.css">
+    <link rel="stylesheet" type="text/css" href="calendario.css">
     <!-- Iconos del tipo Solid, Fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+
+    <title>Fechas</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+    <script>
+      $(function () {
+        $("#fecha").datepicker();
+      });
+    </script>
   </head>
+
   <body>
     <header class="navbar navbar-expand-lg navbar-light">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"  aria-expanded="false" aria-label="Toggle navigation">
@@ -30,41 +41,20 @@
           <li class="nav-item">
             <b><h4 class="text-white">AUTONOMOS NETWORK</h4></b>
           </li>
-        </ul>
+      </ul>
 
-        <ul class="navbar-nav navbar-right">
-          <li class="nav-item">
-            <a class="nav-link text-white" href="./maqueta.html">Cerrar sesión</a>
-          </li>
-        </ul> 
+      <ul class="navbar-nav navbar-right">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="./maqueta.html">Cerrar sesión</a>
+        </li>
+      </ul> 
+
       </div>
     </header>
 
-    <section id = "servicio">
-      <article class = "descripcion-servicio">
-        <div class="col-12 user-img">
-          <p><b> David Parla </b></p>
-          <p><b>Informático</b></p>
-          <img src="user.png"/>
-          <p>A <strong>1,5 km</strong> de ti</p>
-        </div>
-        <br>
-        <p> Tareas a desarrollar : Diseño e implementación de nuevas funcionalidades en nuestra avanzada aplicación de gestión para el sector eléctrico y mantenimiento de red de servidores para nuestro sistema de contadores inteligentes. Ofrecemos: Inmejorable ambiente de trabajo en una PYME con nuevas y amplias instalaciones para un óptimo desarrollo del trabajo. </p>
-        <p><b>Contactar por teléfono</b></p>
-        <a href="tel:+678872534"> + 34 678872534</a>
-        <br>
-        <br>
-        <p><b>Ver disponibilidad</b></p>
-        <center><input type="button" name="disponibilidad" value="Ver disponibilidad"></center>
-    </section>
-
-      </article>
-      <center><input type="button" onclick="history.back()" name="volver atrás" value="Volver"></center>
-    </section>
-
-
- 
-
+    <label for="fecha">Fecha:
+      <input type="text" id="fecha" value="" />
+    </label>
 
 
     

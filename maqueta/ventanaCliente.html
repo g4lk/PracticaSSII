@@ -1,4 +1,4 @@
-﻿<html>
+<html>
   <head>
     <meta charsert='UTF-8'/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,10 +18,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link text-white" href="./maqueta2.html">Inicio <span class="sr-only"></span></a>
+            <a class="nav-link text-white" href="./ventanaCliente.html">Inicio <span class="sr-only"></span></a>
           </li>                    
           <li class="nav-item">
-            <a id="historial" class="nav-link text-white" href="#" >Historial</a>
+            <a id="historial" class="nav-link text-white" href="#">Historial</a>
+          </li>
+          <li class = "nav-item">
+            <a id = "mensajes" href="#"><img src="mensaje.jpeg" width="40" height="40" alt="Mensajes" /></a>
           </li>
         </ul>
 
@@ -29,14 +32,16 @@
           <li class="nav-item">
             <b><h4 class="text-white">AUTONOMOS NETWORK</h4></b>
           </li>
-      </ul>
+        </ul>
 
-      <ul class="navbar-nav navbar-right">
-        <li class="nav-item">
-          <a class="nav-link text-white" href="./maqueta.html">Cerrar sesión</a>
-        </li>
-      </ul> 
-
+        <ul class="navbar-nav navbar-right">
+          <li class = "nav-item">
+            <a class = "nav-link text-white" id = "perfil" href="#"><img src="user.jpeg" width="25" height="30" alt="Perfil" /></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="./maqueta.html">Cerrar sesión</a>
+          </li>
+        </ul> 
       </div>
     </header>
 
@@ -46,16 +51,31 @@
         <button class="btn text-white btn-primary my-2 my-sm-0 " type="submit">Search</button>
         <select class = "dropdownMenu">
           <option selected value="0"> Elige una opción </option>
+
+            <optgroup label="Nombre"> 
+              <option value="1">Raquel</option> 
+              <option value="2">David</option> 
+              <option value="3">Jose</option> 
+            </optgroup> 
+
+            <optgroup label="Categoría"> 
+              <option value="1">Técnico</option> 
+              <option value="2">Hogar</option> 
+              <option value="3">Clases particulares</option> 
+            </optgroup> 
+
+            <optgroup label="Profesional"> 
+              <option value="1">Ingeniero</option> 
+              <option value="2">Profesor</option> 
+              <option value="3">Autónomo</option> 
+            </optgroup> 
+
             <optgroup label="Ubicación"> 
-            <option value="1">Aluche</option> 
-            <option value="2">Parla</option> 
-            <option value="3">Pinto</option> 
-          </optgroup> 
-          <optgroup label="Precio por hora"> 
-            <option value="10">20 €</option> 
-            <option value="11">30 €</option> 
-            <option value="12">40 €</option> 
-          </optgroup> 
+              <option value="1">Aluche</option> 
+              <option value="2">Parla</option> 
+              <option value="3">Pinto</option> 
+            </optgroup> 
+            
         </select>
       </form>
     </div>

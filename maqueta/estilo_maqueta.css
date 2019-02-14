@@ -12,6 +12,28 @@
   transform: translatex(-50%);
 }
 
+.solicitados {
+  text-align: center;
+}
+
+#historial {
+  margin-right: 8px;  
+}
+
+.navbar-nav.mr-auto#li{
+  padding-right: 10px; 
+}
+
+.navbar-nav.navbar-left#a{
+  padding-left: 50px;
+
+  
+}
+
+.mr-auto#li{
+  margin: 0 auto;
+}
+
 .centro {
   float: none;
   margin:0 auto;
@@ -100,6 +122,11 @@ h1:hover{
   font-style: italic;
   font-weight: bold;
 }
+
+.imagen-mensaje#img{
+  margin-left: 10px;
+}
+
 
 
 @import url(https://fonts.googleapis.com/css?family=Fjalla+One:400|Roboto:400,400italic,700);
