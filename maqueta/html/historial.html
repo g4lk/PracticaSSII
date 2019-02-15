@@ -5,8 +5,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!-- Estilo de la pagina con el FRAMEWORK BOOTSTRAP 4-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="estilo_maqueta.css">
-    <link rel="stylesheet" type="text/css" href="infoServicio.css">
+    <link rel="stylesheet" type="text/css" href="../css/estilo_maqueta.css">
     <!-- Iconos del tipo Solid, Fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
   </head>
@@ -15,14 +14,17 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"  aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-        
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link text-white" href="./maqueta2.html">Inicio <span class="sr-only"></span></a>
-          </li>                    
+            <a class="nav-link text-white" href="./ventanaCliente.html">Inicio <span class="sr-only"></span></a>
+          </li>
           <li class="nav-item">
-            <a id="historial" class="nav-link text-white" href="#" >Historial</a>
+            <b><a id="historial" class="nav-link text-white;  text-shadow: 0.1em 0.1em 0.2em black" href="#">Historial</a></b>
+          </li>
+          <li class = "nav-item">
+            <a id = "mensajes" href="#"><img src="../fotos/mensaje.jpeg" width="40" height="40" alt="Mensajes" /></a>
           </li>
         </ul>
 
@@ -33,38 +35,26 @@
         </ul>
 
         <ul class="navbar-nav navbar-right">
+          <li class = "nav-item">
+            <a class = "nav-link text-white" id = "perfil" href="#"><img src="../fotos/user.jpeg" width="25" height="30" alt="Perfil" /></a>
+          </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="./maqueta.html">Cerrar sesión</a>
           </li>
-        </ul> 
+        </ul>
       </div>
     </header>
 
 
-      <article class = "descripcion-servicio">
-        <div class="col-12 user-img">
-          <p><b> David Parla </b></p>
-          <p><b>Informático</b></p>
-          <img src="user.png"/>
-          <p>A <strong>1,5 km</strong> de ti</p>
-        </div>
-        <br>
-        <p> Informático</p>
-        <p> Edad: 34 años </p>
-        <p> Ciudad: Madrid, Fuenlabrada </p>
-        <a href="tel:+678872534"> + 34 678872534</a>
-        <br>
-        <br>
-        <p><b>Ver disponibilidad</b></p>
-        <center><input type="button" name="disponibilidad" value="Ver disponibilidad"></center>
-      </article>
-
+    <br>
     <br>
 
+    <div class = "solicitados">
+      <b><a> Servicios solicitados hasta el momento: </a></b>
+    </div>
 
-    <b><p id = "profesional-servicio"> Este usuario ofrece también estos servicios... </p></b>
     <br>
-
+    <br>
 
     <article class = "ejemplos-servicios">
       <div class = "text-align-center">
@@ -105,23 +95,9 @@
       </div>
     </article>
 
-    <br>
-
-    <section>
-      <center><input type="button" onclick="history.back()" name="volver atrás" value="Volver"></center>
-    </section>
-
-    <br>
-
-
- 
-
-
-
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-    <script src="./app.js"></script>
+    <script src="../js/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   </body>
