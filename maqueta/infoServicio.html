@@ -9,6 +9,18 @@
     <link rel="stylesheet" type="text/css" href="infoServicio.css">
     <!-- Iconos del tipo Solid, Fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+    <script>
+      $(function () {
+        $("#fecha").datepicker();
+      });
+    </script>
+
+
   </head>
   <body>
     <header class="navbar navbar-expand-lg navbar-light">
@@ -55,14 +67,18 @@
         <br>
         <br>
         <p><b>Ver disponibilidad</b></p>
-        <center><input type="button" name="disponibilidad" value="Ver disponibilidad"></center>
+        <label for="fecha">Seleccione una fecha:
+          <input type="text" id="fecha" value="" />
+        </label>
+        <p> Presupuesto: 50€ </p>
+        <input type="submit" id = "enviar-solicitud" value="Enviar solicitud">
     </section>
 
     <br>
 
 
 
-    <b><p id = "profesionales-servicio"> También ofrecen este servicio... </p></b>
+    <b><p class = "text-align-center"id = "tambien-ofrecen"> También ofrecen este servicio... </p></b>
     <br>
     <section id = "listado-servicios">
       <article class = "ejemplos-servicios" >
@@ -103,12 +119,8 @@
     <br>
 
 
- 
-
-
-
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <script src="./app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>

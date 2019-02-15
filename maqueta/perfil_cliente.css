@@ -1,0 +1,13 @@
+.img-hover{
+	max-width: 200px;
+	max-height: 200px;
+}
+
+#btn-cancel, #btn-enviar{
+	text-align: center;
+}
+
+
+.controls{
+	margin-left: 40px;
+}

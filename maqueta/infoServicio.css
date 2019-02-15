@@ -11,16 +11,11 @@
   padding: 10px;
 }
 
-#profesional-servicio{
+
+#profesional-servicio, #lista-profesional-servicios, #tambien-ofrecen{
   text-align: center;
 }
 
-#lista-profesional-servicios{
-  text-align: center;
-}
 
-.servicios-profesional{
-  display: inline-block;
-}
 
 
