@@ -29,14 +29,15 @@
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-#reason {
-	width: 50%;
-	float: right;
+.denegar-motivo{
+  display: inline-block;
+  text-align: center;
 }
 
-#confirmar-denegar {
-	width: 20%;
+#reason {
+	width: 70%;
 }
+
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
@@ -91,4 +92,14 @@
     text-align: center;
     overflow:auto;
   }
+
+  .denegar-motivo{
+    display: inline-block;
+    text-align: center;
+  }
+
+  #reason {
+    margin-bottom: 8%;
+  }
+
 }
