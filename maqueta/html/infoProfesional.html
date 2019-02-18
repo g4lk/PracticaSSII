@@ -9,6 +9,17 @@
     <link rel="stylesheet" type="text/css" href="../css/infoServicio.css">
     <!-- Iconos del tipo Solid, Fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+    <script>
+      $(function () {
+        $("#fecha").datepicker();
+      });
+    </script>
+
+
   </head>
   <body>
     <header class="navbar navbar-expand-lg navbar-light">
@@ -19,10 +30,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link text-white" href="./maqueta2.html">Inicio <span class="sr-only"></span></a>
+            <a class="nav-link text-white" href="maqueta.html">Inicio <span class="sr-only"></span></a>
           </li>
           <li class="nav-item">
-            <a id="historial" class="nav-link text-white" href="#" >Historial</a>
+            <a id="historial" class="nav-link text-white" href="historial.html">Historial</a>
           </li>
           <li class = "nav-item">
             <a id = "mensajes" href="#"><img src="../fotos/mensaje.jpeg" width="40" height="40" alt="Mensajes" /></a>
@@ -38,34 +49,37 @@
 
         <ul class="navbar-nav navbar-right">
           <li class = "nav-item">
-            <a class = "nav-link text-white" id = "perfil" href="#"><img src="../fotos/user.jpeg" width="25" height="30" alt="Perfil" /></a>
+            <a class = "nav-link text-white" id = "perfil" href="perfil_cliente_miperfil.html"><img src="../fotos/user.jpeg" width="25" height="30" alt="Perfil" /></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="./maqueta.html">Cerrar sesión</a>
+            <a class="nav-link text-white" href="maqueta.html">Cerrar sesión</a>
           </li>
         </ul>
       </div>
     </header>
 
 
-      <article class = "descripcion-servicio">
-        <div class="col-12 user-img">
-          <p><b> David Parla </b></p>
-          <p><b>Informático</b></p>
-          <img src="../fotos/user.png"/>
-          <p>A <strong>1,5 km</strong> de ti</p>
-        </div>
-        <br>
-        <p> Informático</p>
-        <p> Edad: 34 años </p>
-        <p> Ciudad: Madrid, Fuenlabrada </p>
-        <a href="tel:+678872534"> + 34 678872534</a>
-        <br>
-        <br>
-        <p><b>Ver disponibilidad</b></p>
-        <center><input type="button" name="disponibilidad" value="Ver disponibilidad"></center>
-      </article>
-
+    <article class = "descripcion-servicio">
+      <div class="col-12 user-img">
+        <p><b> David Parla </b></p>
+        <p><b>Informático</b></p>
+        <img src="../fotos/user.png"/>
+        <p>A <strong>1,5 km</strong> de ti</p>
+      </div>
+      <br>
+      <p> Informático</p>
+      <p> Edad: 34 años </p>
+      <p> Ciudad: Madrid, Fuenlabrada </p>
+      <a href="tel:+678872534"> + 34 678872534</a>
+      <br>
+      <br>
+      <p><b>Ver disponibilidad</b></p>
+      <label for="fecha">Seleccione una fecha:
+        <input type="text" id="fecha" value="" />
+      </label>
+      <p> Presupuesto: 50€ </p>
+      <input type="submit" id = "enviar-solicitud" value="Enviar solicitud">
+    </article>
     <br>
 
 
@@ -82,7 +96,7 @@
       <div class='estarAbajodelCuadrado'>
         <br>
         <p>A <strong>2 km</strong> de ti</p>
-        <a href = "#"> Ampliar información</a>
+        <a href = "infoServicio.html"> Ampliar información</a>
       </div>
     </article>
 
@@ -95,7 +109,7 @@
       <div class='estarAbajodelCuadrado'>
         <br>
         <p>A <strong>2 km</strong> de ti</p>
-        <a href = "#"> Ampliar información</a>
+        <a href = "infoServicio.html"> Ampliar información</a>
       </div>
     </article>
 
@@ -108,7 +122,7 @@
       <div class='estarAbajodelCuadrado'>
         <br>
         <p>A <strong>2 km</strong> de ti</p>
-        <a href = "#"> Ampliar información</a>
+        <a href = "infoServicio.html"> Ampliar información</a>
       </div>
     </article>
 
@@ -121,12 +135,6 @@
     <br>
 
 
-
-
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <script src="../js/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>

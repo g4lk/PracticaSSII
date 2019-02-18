@@ -19,10 +19,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link text-white" href="./ventanaCliente.html">Inicio <span class="sr-only"></span></a>
+            <a class="nav-link text-white" href="../html/ventanaCliente.html">Inicio <span class="sr-only"></span></a>
           </li>
           <li class="nav-item">
-            <a id="historial" class="nav-link text-white" href="#">Historial</a>
+            <a id="historial" class="nav-link text-white" href="../html/historial.html">Historial</a>
           </li>
           <li class = "nav-item">
             <a id = "mensajes" href="#"><img src="../fotos/mensaje.jpeg" width="40" height="40" alt="Mensajes" /></a>
@@ -37,10 +37,10 @@
 
         <ul class="navbar-nav navbar-right">
           <li class = "nav-item">
-            <a class = "nav-link text-white" id = "perfil" href="#"><img src="../fotos/user.jpeg" width="25" height="30" alt="Perfil" /></a>
+            <a class = "nav-link text-white" id = "perfil" href="../html/perfil_cliente_miperfil.html"><img src="../fotos/user.jpeg" width="25" height="30" alt="Perfil" /></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="./maqueta.html">Cerrar sesión</a>
+            <a class="nav-link text-white" href="../html/maqueta.html">Cerrar sesión</a>
           </li>
         </ul>
       </div>
@@ -67,33 +67,36 @@
         <!-- Barra vertical de opciones del perfil de cliente -->
           <br >
           <ul class="list-group list-primary">
-            <a href="#" class="list-group-item">Mi perfil</a>
+            <a href="../html/perfil_cliente_miperfil.html" class="list-group-item">Mi perfil</a>
             <a href="#" class="list-group-item">Fotografia</a>
-            <b><a href="#" class="list-group-item">Datos bancarios</a></b>
+            <b><a href="../html/perfil_cliente_datosbancarios" class="list-group-item">Datos bancarios</a></b>
           </ul>
         </div>
         <!-- Fin Barra de opciones de perfil de usuario -->
       </div>
-      <!-- Fin de Columna de la izquierda -->
+
+    
+
 
 
 <!-- Parte central -->
       <div id = "informacion" class="col-md-8">
-        <div class="col-md-10" style="border-width: 4px 4px 4px px; border-style: solid; border-color: #007bff; background: light-grey;">
 
+        <div class="col-md-10" style="border-width: 4px 4px 4px px; border-style: solid; border-color: #007bff; background: light-grey;">
           <h3 style="text-align: center">Datos bancarios<p><small>Recuerde que esta información es confidencial</small></p></h3>
         </div>
+
         <!-- Iniciamos form -->
         <form name="modifyProfile" id="profileForm" novalidate>
           <!-- Inicio del div central parte de formulario información básica -->
           <div class="col-md-10" style="border-width: 0px 4px 4px 4px; border-style: solid; border-color: #007bff; background: light-grey;">
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-11 col-md-offset-2">
               <div class="control-group form-group">
                 <div class="controls">
                 <br>
                   <b><label>Número de cuenta IBAN</label></b>
                     <span id="alertSurname">
-                      <input type="text" class="form-control" id="txtSurname" placeholder="Introduzca el número de su cuenta IBAN" required data-validation-required-message="Por favor introduzca el número de su cuenta IBAN">
+                      <input type="text" class="form-control" id="txtSurname" placeholder="Introduzca su IBAN" required data-validation-required-message="Por favor introduzca el número de su cuenta IBAN">
                     </span>
                     <p class="help-block"></p>
                   </label>
@@ -106,6 +109,7 @@
           <!-- Fin del div central parte de los datos bancarios -->
         </form>
       </div>
+    </div> <!-- Fin de Columna de la izquierda -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>

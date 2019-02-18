@@ -16,6 +16,39 @@
   text-align: center;
 }
 
+/* Resolución para TABLET: 780px o menos*/
+@media screen and (max-width: 780px) {
+  .ejemplos-servicios{
+    border: 1px solid #007bff;
+    margin-left: 10%;
+    background-color: white;
+    margin-bottom: 30px;
+    display: inline-block;
+    border: 1px solid; 
+    padding: 10px; 
+    width: 35%;
+    height: 40%;
+    text-align: center;
+    overflow:auto;
+  }
+}
+
+/* Resolución para MOVIL (iphone 4): 480px o menos*/
+@media screen and (max-width: 480px) {
+  .ejemplos-servicios{
+    border: 1px solid #007bff;
+    background-color: white;  
+    margin-bottom: 30px;
+    border: 1px solid;  
+    width: 85%;
+    height: 50%;
+    padding: 10px;
+    text-align: center;
+    overflow:auto;
+  }
+}
+
+
 
 
 

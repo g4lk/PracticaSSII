@@ -22,7 +22,7 @@
             <a class="nav-link text-white" href="./ventanaCliente.html">Inicio <span class="sr-only"></span></a>
           </li>
           <li class="nav-item">
-            <a id="historial" class="nav-link text-white" href="#">Historial</a>
+            <a id="historial" class="nav-link text-white" href="../html/historial.html">Historial</a>
           </li>
           <li class = "nav-item">
             <a id = "mensajes" href="#"><img src="../fotos/mensaje.jpeg" width="40" height="40" alt="Mensajes" /></a>
@@ -37,10 +37,10 @@
 
         <ul class="navbar-nav navbar-right">
           <li class = "nav-item">
-            <a class = "nav-link text-white" id = "perfil" href="#"><img src="../fotos/user.jpeg" width="25" height="30" alt="Perfil" /></a>
+            <a class = "nav-link text-white" id = "perfil" href="../html/perfil_cliente_miperfil.html"><img src="../fotos/user.jpeg" width="25" height="30" alt="Perfil" /></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="./maqueta.html">Cerrar sesión</a>
+            <a class="nav-link text-white" href="../html/maqueta.html">Cerrar sesión</a>
           </li>
         </ul>
       </div>
@@ -67,9 +67,9 @@
         <!-- Barra vertical de opciones del perfil de cliente -->
           <br >
           <ul class="list-group list-primary">
-            <b><a href="#" class="list-group-item">Mi perfil</a></b>
+            <b><a href="../html/perfil_cliente_miperfil" class="list-group-item">Mi perfil</a></b>
             <a href="#" class="list-group-item">Fotografia</a>
-            <a href="#" class="list-group-item">Datos bancarios</a>
+            <a href="../html/perfil_cliente_datosbancarios.html" class="list-group-item">Datos bancarios</a>
           </ul>
         </div>
         <!-- Fin Barra de opciones de perfil de usuario -->
@@ -77,17 +77,19 @@
       <!-- Fin de Columna de la izquierda -->
 
 
-<!-- Parte central -->
-      <div id = "informacion" class="col-md-8">
-        <div class="col-md-10" style="border-width: 4px 4px 4px px; border-style: solid; border-color: #007bff; background: light-grey;">
 
+
+      <!-- Parte central -->
+      <div id = "informacion" class="col-md-8">
+        <div class="col-md-10" id = "col-10" style="border-width: 4px 4px 4px px; border-style: solid; border-color: #007bff; background: light-grey;">
           <h3 style="text-align: center">Mi perfil <p><small>Añade información personal para compartir tu perfil</small></p></h3>
         </div>
+
         <!-- Iniciamos form -->
         <form name="modifyProfile" id="profileForm" novalidate>
           <!-- Inicio del div central parte de formulario información básica -->
-          <div class="col-md-10" style="border-width: 0px 4px 4px 4px; border-style: solid; border-color: #007bff; background: light-grey;">
-            <div class="col-md-8 col-md-offset-2">
+          <div class="col-md-10" id = "col-10" style="border-width: 0px 4px 4px 4px; border-style: solid; border-color: #007bff; background: light-grey;">
+            <div class="col-md-10 col-md-offset-2">
               <div class="control-group form-group">
                 <div class="controls">
                 <br>
@@ -122,27 +124,24 @@
                       data-validation-required-message="Por favor introduzca su biografía deseada."></textarea>
                     </span>
                     <br>
+                    <!-- Botones del formulario -->
+                    <button type="button" id="btnCancel" class="btn btn-danger">Cancelar</button>
+                    <button type="submit" id="btnEnviar" class="btn btn-primary">Actualizar</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- Fin del div central parte de información básica -->
-
-          <!-- Botones del formulario -->
-          <div class="col-md-4 container allFormButtons">
-
-                <button type="button" id="btnCancel" class="btn btn-danger">Cancelar</button>
-                <button type="submit" id="btnEnviar" class="btn btn-primary">Actualizar</button>
-            <br>
-            <br>
-          </div>
-
+        </form>
       </div>
+    </div> 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <script src="../js/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
   </body>
 </html>

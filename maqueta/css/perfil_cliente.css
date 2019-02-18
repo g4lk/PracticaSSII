@@ -7,7 +7,78 @@
 	text-align: center;
 }
 
-
 .controls{
 	margin-left: 40px;
+}
+
+#col-10{
+	margin-left: 5%;
+}
+
+#informacion{
+	margin-left: 7%;
+}
+
+
+/* Resolución para TABLET : 780px o menos*/
+@media screen and (max-width: 780px) {
+	.img-hover{
+		width: 200%;
+		height: 100%;
+	}
+
+	.col-md-3{
+		display: inline-block;
+		text-align: left;
+	}
+
+	#informacion{
+		margin-top: 1%;
+		margin-left: 7%;
+	}
+
+
+	#col-10{
+		margin-left: 10%;
+	}
+	
+	.btn-danger, .btn-primary{
+		text-align: center;
+	}
+
+	.controls{
+		width: 100%;
+		margin-right: 10%;
+	}
+
+
+}
+
+/* Resolución para MOVIL (iphone 4): 468px o menos*/
+@media screen and (max-width: 468px) {
+	.img-hover{
+		max-width: 200px;
+		max-height: 200px;
+	}
+
+	#informacion{
+		margin-top: 10%;
+	}
+
+
+	#profile-form{
+		margin-left: 2%;
+	}
+
+	.controls{
+		margin: 0%;
+		width: 100%;
+	}
+
+	#col-10{
+		margin-left: 0%;
+	}
+
+
+
 }
