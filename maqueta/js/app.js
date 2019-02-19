@@ -1,3 +1,5 @@
+// Pedro David Parla García y Raquel Rodríguez Recio
+
 $(document).ready(function(){
     $('#lista-servicio').hide();
     $('#buscar').on('submit', function(e){

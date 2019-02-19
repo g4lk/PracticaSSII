@@ -1,4 +1,6 @@
-﻿body{
+/** Raquel Rodriguez Recio y Pedro David Parla García **/
+
+body{
   background: #AED6F1;
 }
 
@@ -65,8 +67,8 @@
 
 .dropdownMenu{
   margin-left: 40px;
-  margin-right: 40px;
-  width: 180px;
+  margin-right: 20px;
+  width: 140px;
 }
 
 .button{
@@ -204,7 +206,7 @@ div[data-title]:hover:after {
 
 
 
-/* Resolución para TABLET: 780px o menos*/
+/* Resoluci�n para TABLET: 780px o menos*/
 @media screen and (max-width: 780px) {
   body{
     background: #AED6F1;
@@ -282,9 +284,9 @@ div[data-title]:hover:after {
   }
 
   .dropdownMenu{
-    margin-left: 20px;
+    margin-left: 10px;
     margin-right: 20px;
-    width: 180px;
+    width: 140px;
     max-height: 150px;
     max-width: 150px;
     text-align: center;
@@ -430,7 +432,7 @@ div[data-title]:hover:after {
 }
 
 
-/* Resolución para MOVIL (iphone 4): 480px o menos*/
+/* Resoluci�n para MOVIL (iphone 4): 480px o menos*/
 @media screen and (max-width: 480px) {
 
   body{
@@ -495,9 +497,9 @@ div[data-title]:hover:after {
   }
 
   .dropdownMenu{
-    margin-left: 40px;
-    margin-right: 40px;
-    width: 180px;
+    margin-left: 10px;
+    margin-right: 0px;
+    width: 140px;
   }
 
   .button{
