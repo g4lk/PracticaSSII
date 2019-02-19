@@ -65,7 +65,7 @@
         <p class="text-left"> <b>Presupuesto:</b> 70€ </p>
         <p class="text-left"> <b>Tiempo restante de confirmación:</b> 11h
         <center><p><b>Estado: Pendiente de confirmación </b></p> </center>
-        <input type="submit" id = "aceptar-solicitud" value="Aceptar" >
+        <input type="submit" id = "aceptar-solicitud" value="Aceptar" onclick="location.href='./ventanaProfesionalCAceptada.html';">
         <input type="submit" id = "denegar-solicitud" value="Denegar">
       </article>
     </section>
@@ -77,8 +77,8 @@
         <center><p><b>¿Está seguro de denegar la solicitud?</b></p></center>
         <center><p><b>Indiquenos su motivo brevente:</b></p></center>
         <div class = "denegar-motivo">
-          <input type="text" id="reason">
-          <input type="submit" id = "confirmar-denegar" value="Denegar" >
+          <input type="text" id="reason" maxlength="75">
+          <input type="submit" id = "confirmar-denegar" value="Denegar" onclick="location.href='./ventanaProfesionalCDenegada.html';" >
         </div>
       </div>
   </div>

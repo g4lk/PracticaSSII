@@ -1,0 +1,150 @@
+<html>
+  <head>
+    <meta charset='UTF-8'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Estilo de la pagina con el FRAMEWORK BOOTSTRAP 4-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/estilo_maqueta.css">
+    <link rel="stylesheet" type="text/css" href="../css/perfil_cliente.css">
+    <!-- Iconos del tipo Solid, Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+  </head>
+  <body>
+    <header class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"  aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="./ventanaProfesional.html">Inicio <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a id="informes" class="nav-link text-white" href="#">Informes</a>
+          </li>
+          <li class="nav-item">
+            <a id="servicios" class="nav-link text-white" href="./infoServiciosProfesional.html">Servicios</a>
+          </li>
+          <li class = "nav-item">
+            <a id = "mensajes" href="#"><img src="../fotos/mensaje.jpeg" width="40" height="40" alt="Mensajes" /></a>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-center">
+          <li class="nav-item">
+            <b><h4 class="text-white">AUTONOMOS NETWORK</h4></b>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav navbar-right">
+          <li class = "nav-item">
+            <a class = "nav-link text-white" id = "perfil" href="perfil_p_miperfil.html"><img src="../fotos/user.jpeg" width="25" height="30" alt="Perfil" /></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="./maqueta.html">Cerrar sesión</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <br>
+    <br>
+
+    <!-- Columna de la izquierda -->
+    <div class="row">
+      <!-- Columna de la izquierda -->
+      <div class="col-md-3">
+        <div class="col-md-12" align="center">
+          <img id = "img-cliente" class="img-responsive img-portfolio img-hover" src="../fotos/user.png">
+        </div>
+        <div class="col-md-12">
+          <p class="text-center"><strong>David Parla García</strong></p>
+          <p class="text-center"><em>Me dedico a trabajar para todos</em></p>
+        </div>
+
+
+
+        <div class="col-md-12">
+        <!-- Barra vertical de opciones del perfil del profesional -->
+          <br >
+          <ul class="list-group list-primary">
+            <b><a href="../html/perfil_p_miperfil" class="list-group-item">Mi perfil</a></b>
+            <a href="#" class="list-group-item">Fotografia</a>
+            <a href="../html/perfil_p_datosbancarios.html" class="list-group-item">Datos bancarios</a>
+          </ul>
+        </div>
+        <!-- Fin Barra de opciones de perfil del profesional -->
+      </div>
+      <!-- Fin de Columna de la izquierda -->
+
+
+
+
+      <!-- Parte central -->
+      <div id = "informacion" class="col-md-8">
+        <div class="col-md-10" id = "col-10" style="border-width: 4px 4px 4px px; border-style: solid; border-color: #007bff; background: light-grey;">
+          <h3 style="text-align: center">Mi perfil <p><small>Añade información personal para compartir tu perfil</small></p></h3>
+        </div>
+
+        <!-- Iniciamos form -->
+        <form name="modifyProfile" id="profileForm" novalidate>
+          <!-- Inicio del div central parte de formulario información básica -->
+          <div class="col-md-10" id = "col-10" style="border-width: 0px 4px 4px 4px; border-style: solid; border-color: #007bff; background: light-grey;">
+            <div class="col-md-10 col-md-offset-2">
+              <div class="control-group form-group">
+                <div class="controls">
+                <br>
+                  <b><label>Información básica</label></b>
+                    <span id="alertName">
+                      <input type="text" class="form-control" id="txtName" placeholder="Introduzca su nombre" required data-validation-required-message="Por favor introduzca su nomnbre.">
+                    </span>
+                    <br>
+                    <span id="alertSurname">
+                      <input type="text" class="form-control" id="txtSurname" placeholder="Introduzca sus apellidos" required data-validation-required-message="Por favor introduzca sus apellidos.">
+                    </span>
+                    <br>
+                    <span id="alertQualification">
+                      <input type="text" class="form-control" id="txtQualification" placeholder="Introduzca su título" required data-validation-required-message="Por favor introduzca su título.">
+                    </span>
+                    <br>
+                    <span id="alertEmail">
+                      <input type="email" class="form-control" id="txtEmail" placeholder="Introduzca su email" required data-validation-required-message="Por favor introduzca su email.">
+                    </span>
+                    <br>
+                    <span id="alertNumber">
+                      <input type="text" class="form-control" id="txtName" placeholder="Introduzca su número de teléfono" required data-validation-required-message="Por favor introduzca su número de teléfono.">
+                    </span>
+                    <p class="help-block"></p>
+                  </label>
+                </div>
+                <div class="control-group form-group">
+                  <div class="controls">
+                    <b><label>Biografía:</label></b>
+                    <span id="alertBiography" data-toggle="popover" data-trigger="hover" data-placement="auto" title="" data-content="">
+                      <textarea rows="6" cols="30" class="form-control" id="txtBiography" required maxlength="999" style="resize:none"
+                      data-validation-required-message="Por favor introduzca su biografía deseada."></textarea>
+                    </span>
+                    <br>
+                    <!-- Botones del formulario -->
+                    <button type="button" id="btnCancel" class="btn btn-danger">Cancelar</button>
+                    <button type="submit" id="btnEnviar" class="btn btn-primary">Actualizar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fin del div central parte de información básica -->
+        </form>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+  </body>
+</html>
